@@ -1,5 +1,5 @@
 {
-  "name": "node-js-getting-started",
+  "name": "node-js-restfulAPI",
   "version": "0.3.0",
   "description": "A sample Node.js app using Express 4",
   "engines": {
@@ -7,20 +7,24 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "NODE_ENV=dev && node index.js",
+    "test": "mocha --timeout 10000"
   },
   "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "chai": "^3.5.0",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/maacaro/node-js-restfulAPI"
   },
   "keywords": [
     "node",
