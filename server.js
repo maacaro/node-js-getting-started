@@ -2,19 +2,16 @@ const express = require('express')
 const path = require('path')
 const server = express();
 
-let  MongoClient = require('mongodb').MongoClient;
+let MongoClient = require('mongodb').MongoClient;
 let morgan = require('morgan');
 let bodyParser = require('body-parser');
 let config = require('config');
 
-let options = { 
-    server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
-    replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } },
-  }; 
-
 MongoClient.connect(config.DBHost,{ useNewUrlParser: true },function(err, client) {
-    if (err) throw err;
-    const collection = client.db("test").collection("devices");
+    if (err) {
+        throw err;
+    }
+    const collection = client.db("seJuegaFutbol").collection("games");
     client.close();
  });
 
