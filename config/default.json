@@ -1,3 +1,4 @@
 {
     "DBHost": "mongodb://seJuegaFutbol:NVibTEjDC1IM8HHm@clustersejuegafutbol-shard-00-00-1huaq.mongodb.net:27017,clustersejuegafutbol-shard-00-01-1huaq.mongodb.net:27017,clustersejuegafutbol-shard-00-02-1huaq.mongodb.net:27017/test?ssl=true&replicaSet=clusterSeJuegaFutbol-shard-0&authSource=admin&retryWrites=true"
+
 }
